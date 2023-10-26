@@ -1,12 +1,14 @@
 import { proxy } from 'valtio';
+import {nbalogo} from '../assets'
 
 const state = proxy({
    intro: true, 
-   color: '#EFBD48',
+   color: 'grey',
    isLogoTexture: true,
    isFullTexture: false, 
-   logoDecal: './lakers.png',
-   fullDecal: './lakers.png',
+   logoDecal: nbalogo,
+   fullDecal: nbalogo,
+   selectedLogo: nbalogo,
 })
 
 export default state;
